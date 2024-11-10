@@ -3,23 +3,23 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: flaskdemo
-  name: flaskdemo
+    app: capstone
+  name: capstone
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: flaskdemo
+      app: capstone
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: flaskdemo
+        app: capstone
     spec:
       containers:
-      - image: lasanthasanjeewa/webtier:17
-        name: flaskdemo
+      - image: 932747549174.dkr.ecr.us-east-2.amazonaws.com/capstone:17
+        name: capstone
         resources: {}
 status: {}
 ---
@@ -35,4 +35,4 @@ spec:
   - port: 80
     targetPort: 5000
   selector:
-    app: flaskdemo
+    app: capstone
