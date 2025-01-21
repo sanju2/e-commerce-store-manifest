@@ -18,7 +18,7 @@ spec:
         app: capstone
     spec:
       containers:
-      - image: 932747549174.dkr.ecr.us-east-2.amazonaws.com/capstone:14
+      - image: 932747549174.dkr.ecr.us-east-2.amazonaws.com/capstone:15
         name: capstone
         resources: {}
 status: {}
